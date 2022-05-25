@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: aw_postgre
+    description: This is a Adventure Works postgres replica
+    tables:
+      - name: person_address
+      - name: person_countryregion
+      - name: person_person
+      - name: person_stateprovince
+      - name: production_product
+      - name: sales_creditcard
+      - name: sales_customer
+      - name: sales_salesorderdetail
+      - name: sales_salesorderheader
+      - name: sales_salesorderheadersalesreason
+      - name: sales_salesreason
