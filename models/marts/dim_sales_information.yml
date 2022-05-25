@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_sales_information
+    columns:
+      - name: sales_order_sk
+        description: Surrogate key.
+        tests:
+          - unique
+          - not_null
+      - name: sales_order_id
+        description: Primary key for sales order records.
+      - name: status
+        description: Order current status.
+      - name: status_desc
+        description: Order current status. 1 = In process; 2 = Approved; 3 = Backordered; 4 = Rejected; 5 = Shipped; 6 = Cancelled.
+      - name: reason_type
+        description: Category the sales reason belongs to.
