@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_territory
+    columns:
+      - name: address_sk
+        description: Surrogate key.
+        tests:
+          - unique
+          - not_null
+      - name: address_id
+        description: Primary key for address records.
+      - name: country_region_code
+        description: ISO standard code for countries and regions.
+      - name: state_province_code
+        description: ISO standard state or province code.
+      - name: country
+        description: Country or region name.
+      - name: state
+        description: State or province description.
+      - name: city
+        description: Name of the city.
+      - name: address
+        description: Street address line.
