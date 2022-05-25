@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: fact_sales
+    columns:
+      - name: sales_order_id
+        description: Primary key for sales order records.
+      - name: product_sk
+        description: Surrogate key of product records
+      - name: address_sk
+        description: Surrogate key of address records
+      - name: credit_card_sk
+        description: Surrogate key of credit card records
+      - name: customer_sk
+        description: Surrogate key of customers records
+      - name: sales_reason_sk
+        description: Surrogate key of reasons records
+      - name: sales_order_sk
+        description: Surrogate key of sales order records
+      - name: order_date
+        description: Surrogate key of order date records
+      - name: due_date
+        description: Surrogate key of due date records
+      - name: ship_date
+        description: Surrogate key of ship date records
+      - name: order_qty
+        description: Quantity ordered per product.
+      - name: unit_price
+        description: Selling price of a single product.
+      - name: unit_price_discount
+        description: Discount amount.
